@@ -11,11 +11,11 @@ Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install
 ## Vue d'ensemble
 Navidrome est un serveur et un streamer de collection de musique en ligne open source. Il vous donne la liberté d'écouter votre playlist à partir de n'importe quel navigateur ou appareil mobile.
 
-**Version incluse :** 0.39.0
+**Version incluse :** 1.0.0
 
 ## Captures d'écran
 
-![](https://raw.githubusercontent.com/deluan/navidrome/master/.github/screenshots/ss-desktop-player.png)
+![](https://owncloud.com/wp-content/uploads/2020/12/owncloud-vue.js-interface-1280x824.png)
 
 ## Démo
 
