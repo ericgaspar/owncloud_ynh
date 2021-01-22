@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/deluan/navidrome/releases/download/v0.39.0/navidrome_0.39.0_Linux_arm64.tar.gz
-SOURCE_SUM=f54ebe5401f92c856c24a6085192c01c6db4a07819ed680bc758765da56fe4c4
+SOURCE_URL=https://github.com/owncloud/ocis/releases/download/v1.0.0/ocis-1.0.0-linux-arm64
+SOURCE_SUM=a62b05e4255fb73d871560e78eff6e5be2ad78d2e755378c8044779c4044517d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false

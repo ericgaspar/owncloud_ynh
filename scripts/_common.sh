@@ -5,7 +5,7 @@
 #=================================================
 
 # dependencies used by the app
-pkg_dependencies="ffmpeg"
+pkg_dependencies=""
 
 #=================================================
 # PERSONAL HELPERS

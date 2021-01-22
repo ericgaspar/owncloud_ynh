@@ -58,15 +58,15 @@ ynh_app_setting_set --app=$app --key=is_public --value=$is_public
 ynh_script_progression --message="Finding an available port..." --weight=0
 
 # Find an available port
-port=$(ynh_find_port --port=4533)
+port=$(ynh_find_port --port=9200)
 ynh_app_setting_set --app=$app --key=port --value=$port
 
-#=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Installing dependencies..." --weight=9
+# #=================================================
+# # INSTALL DEPENDENCIES
+# #=================================================
+# ynh_script_progression --message="Installing dependencies..." --weight=9
 
-ynh_install_app_dependencies $pkg_dependencies
+# ynh_install_app_dependencies $pkg_dependencies
 
 #=================================================
 # CREATE DEDICATED USER
@@ -102,23 +102,6 @@ ynh_script_progression --message="Adding multimedia directories..." --weight=2
 ynh_multimedia_build_main_dir
 
 #=================================================
-# MODIFY A CONFIG FILE
-#=================================================
-ynh_script_progression --message="Modifying a config file..." --weight=1
-
-config_path="/var/lib/$app"
-mkdir -p "$config_path"
-
-cp ../conf/navidrome.toml "$config_path/navidrome.toml"
-
-# Main config File
-ynh_replace_string --match_string="__PORT__" --replace_string="$port" --target_file="$config_path/navidrome.toml"
-ynh_replace_string --match_string="__PATH_URL__" --replace_string="$path_url" --target_file="$config_path/navidrome.toml"
-ynh_replace_string --match_string="__CONFIG_PATH__" --replace_string="$config_path" --target_file="$config_path/navidrome.toml"
-
-ynh_store_file_checksum --file="$config_path/navidrome.toml"
-
-#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
@@ -137,8 +120,8 @@ ynh_add_systemd_config
 ynh_script_progression --message="Securing files and directories..." --weight=1
 
 # Set permissions to app files
-chown -R $app: "$final_path"
-chown -R $app: "$config_path"
+#chown -R $app: "$final_path"
+chmod +x $final_path/ocis
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
