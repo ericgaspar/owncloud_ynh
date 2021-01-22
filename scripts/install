@@ -96,6 +96,14 @@ ynh_script_progression --message="Configuring NGINX web server..." --weight=3
 ynh_add_nginx_config
 
 #=================================================
+# CREATE DEDICATED USER
+#=================================================
+ynh_script_progression --message="Configuring system user..." --weight=1
+
+# Create a system user
+ynh_system_user_create --username=$app
+
+#=================================================
 # SETUP SYSTEMD
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
@@ -113,8 +121,8 @@ ynh_add_systemd_config
 ynh_script_progression --message="Securing files and directories..." --weight=1
 
 # Set permissions to app files
-#chown -R $app: "$final_path"
-chmod -R +x $final_path
+chown -R $app: $final_path
+chmod +x $final_path/ocis
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST

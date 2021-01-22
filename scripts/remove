@@ -58,14 +58,6 @@ ynh_script_progression --message="Removing Navidrome main directory..." --weight
 ynh_secure_remove --file="$final_path"
 
 #=================================================
-# REMOVE APP CONFIG DIR
-#=================================================
-ynh_script_progression --message="Removing Navidrome config directory..." --weight=6
-
-# Remove the config directory securely
-ynh_secure_remove --file="/var/lib/$app"
-
-#=================================================
 # REMOVE NGINX CONFIGURATION
 #=================================================
 ynh_script_progression --message="Removing NGINX web server configuration..." --weight=5

@@ -125,7 +125,7 @@ ynh_script_progression --message="Securing files and directories..."
 
 # Set permissions on app files
 chown -R $app: $final_path
-chown -R $app: $config_path
+chmod +x $final_path/ocis
 
 #=================================================
 # INTEGRATE SERVICE IN YUNOHOST
