@@ -1,6 +1,6 @@
 SOURCE_URL=https://github.com/owncloud/ocis/releases/download/v1.0.0/ocis-1.0.0-linux-amd64
 SOURCE_SUM=6ab2ee1d674595f928c607d29ee3956611786cea5ada655122cac61e75d32047
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+#SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=false
-SOURCE_FILENAME=
+SOURCE_FILENAME=ocis
