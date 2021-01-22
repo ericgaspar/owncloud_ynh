@@ -1,7 +1,7 @@
 # ownCloud for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/navidrome.svg)](https://dash.yunohost.org/appci/app/navidrome) ![](https://ci-apps.yunohost.org/ci/badges/navidrome.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/navidrome.maintain.svg)  
-[![Install Navidrome with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=navidrome)
+[![Integration level](https://dash.yunohost.org/integration/owncloud.svg)](https://dash.yunohost.org/appci/app/owncloud) ![](https://ci-apps.yunohost.org/ci/badges/owncloud.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/owncloud.maintain.svg)  
+[![Install Navidrome with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncloud)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
@@ -47,12 +47,12 @@ You must activate *public site* if you want to connect a client player to Navidr
 
 #### Supported architectures
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/navidrome%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/navidrome/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/navidrome%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/navidrome/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/owncloud%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/owncloud/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/owncloud%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/owncloud/)
 
 ## Links
 
- * Report a bug: https://github.com/YunoHost-Apps/navidrome_ynh/issues
+ * Report a bug: https://github.com/YunoHost-Apps/owncloud_ynh/issues
  * App website: https://www.navidrome.org/
  * Upstream app repository: https://github.com/deluan/navidrome/
  * YunoHost website: https://yunohost.org/
@@ -61,11 +61,11 @@ You must activate *public site* if you want to connect a client player to Navidr
 
 ## Developer info
 
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/navidrome_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/navidrome_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade navidrome -u https://github.com/YunoHost-Apps/navidrome_ynh/tree/testing --debug
+sudo yunohost app upgrade owncloud -u https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
 ```
